@@ -18,9 +18,9 @@ classifiers = [
 ]
 license = {text = "GNU General Public License v3"}
 dependencies = [
-  "typer"
-  "numpy"
-  "fn.py"
+  "typer",
+  "numpy",
+  "fn.py",
   "scipy"
 ]
 
