@@ -109,7 +109,7 @@ def AB_confidence_sequence(N_A, N_B, phi, alpha=0.05):
     def root(x):
         return g(x, h(x)) - K
 
-    step = np.max(np.absolute(N_B - N_A), 1)
+    step = np.maximum(np.absolute(N_B - N_A), 1)
     upper_bound = head(
         dropwhile(lambda x: root(x) < 0, iterate(_ + step, N_B - N_A))
     )
